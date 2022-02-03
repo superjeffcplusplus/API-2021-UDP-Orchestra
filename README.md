@@ -123,7 +123,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | In a JavaScript program, if we have an object, how can we **serialize it in JSON**? |
 |          | We used `JSON.stringify` to convert it to a string                                                       |
 | Question | What is **npm**?                                                                    |
-|          | It is the package manager of Node.js. We used it to add new packages such as `udp4` to handle the UDP communication.                                                       |
+|          | It is the package manager of Node.js. We used it to add new packages such as `dgram` to handle the UDP communication.                                                       |
 | Question | What is the `npm install` command and what is the purpose of the `--save` flag?     |
 |          | This option was used before `npm 5`to add dependancies, nowadays it is useless.                                                       |
 | Question | How can we use the `https://www.npmjs.com/` web site?                               |
@@ -133,7 +133,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | In Node.js, how can we execute a function on a **periodic** basis?                  |
 |          | By using the `setInterval` function with another callback function. But we have to manually call the callback function once before calling `setInterval` to not have to wait before the first call.                                                       |
 | Question | In Node.js, how can we **emit UDP datagrams**?                                      |
-|          | By using the package `upd4`, first we create a socket with : `dgram.createSocket('udp4')` and after we can send datagrams with the `send()` method on the created socket.                                                     |
+|          | By using the package `dgram`, first we create a socket with : `dgram.createSocket('udp4')` and after we can send datagrams with the `send()` method on the created socket.                                                     |
 | Question | In Node.js, how can we **access the command line arguments**?                       |
 |          | We used the process argument array : `process.argv`, it can be used like in C.                                                        |
 
