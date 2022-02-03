@@ -114,9 +114,7 @@ Reminder: answer the following questions [here](https://forms.gle/6SM7cu4cYhNsRv
 | Question | What **payload** should we put in the UDP datagrams?                                                                                                                    |
 |          | The only job a musician has to do is to play his instrument. So it will be a string of the sound of his instrument.                                                                                                                                            |
 | Question | What **data structures** do we need in the UDP sender and receiver? When will we update these data structures? When will we query these data structures?                |
-|          | 
-- They will share the same datastructure : an array of objects. Each object is an instrument, having a name and a sound. They will query this datastructure to get the name from the sound and inversely. This array will not be changed. 
-- Moreover, the auditor will have an array of "active musicians", each active musician is an object having a "uuid", an instrument and a "first connexion time". It will be queried on each packet received to know if the musician is already known and active. The array will be updated on each first connexion : to add the musician and each time a musician become inactive (after 5s of inactivity) : to remove the musician.|
+|          | They will share the same datastructure : an array of objects. Each object is an instrument, having a name and a sound. They will query this datastructure to get the name from the sound and inversely. This array will not be changed. Moreover, the auditor will have an array of "active musicians", each active musician is an object having a "uuid", an instrument and a "first connexion time". It will be queried on each packet received to know if the musician is already known and active. The array will be updated on each first connexion : to add the musician and each time a musician become inactive (after 5s of inactivity) : to remove the musician.|
 
 ## Task 2: implement a "musician" Node.js application
 
