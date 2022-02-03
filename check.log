@@ -1,43 +1,43 @@
 origin	git@github.com:superjeffcplusplus/API-2021-UDP-Orchestra.git (fetch)
 origin	git@github.com:superjeffcplusplus/API-2021-UDP-Orchestra.git (push)
-Starting auditor container "43b0829c5faf833e49877349ef7c1fcec226ac8d218ee3a8aefb3883a57c13b2"
-Starting auditor container "a57b4c742852a04461ba347b1d021932aa46efca5096ab667d383430b9d85f30"
-Starting auditor container "b30fe939f4f8eeaa8962fe7313b51f3a7dc210976983c446c75ad0fff1772edf"
-Starting auditor container "5e1005434f143aa01ee1e17229491f78cbbbce0461f98a88c3d08941b999e73c"
-Starting auditor container "d2da3b327c7dc03974bf17bdcd4d4634a90b16f39791897ef78d494e64bd4c36"
-Starting auditor container "ceea8bf1ec239ed107ca68f7e26c6ed7f44423ea907eb94dc675e06dc82ec668"
-Starting auditor container "bb57beb1d818920187ee3d4e8a7cd6d74e6fd1f15ba40af95cb6e2de3319e3f6"
-Starting auditor container "103000173aa5a0d7b667010b660aead50c719ccd764996f0bb99ebcf27007591"
-Starting auditor container "5d4e0d2598a398897f7e15d5e771553f09827d2871510357070365282de32e52"
-Starting auditor container "c6c3dc973ec6ef6528bb6caecbaabe342407a730a8b3798bd7e1e697a46b78df"
-Starting auditor container "01809b00448a3c34db3c873271d03fd808c3ea5d57d7aa89c8ada3bb29dc74a9"
+Starting auditor container "6f21fe23f400c2c755ba18790728d5044423071605a4b5c68f77dce814b36f1f"
+Starting auditor container "34ece43d1279abb36697a0ab07cdf3a3e86a125441223f148e55f1ccd039cee2"
+Starting auditor container "2289d6a78e117fd94a00974c75acf249076d7db8bad8128ece4b76b03407dbd1"
+Starting auditor container "a5e6b2c7d9bfd372815601a9e396f49323d1dad762b5e7c5d2c16d5c4088f52c"
+Starting auditor container "205b5f198def0cdaf6f153d1aec06de9090413e5d4d309d3b529d63b0a5d3444"
+Starting auditor container "48a5f679733ff40ac6def0e2c0f1446113ec1c44d0c9ec1c263e7fb18b16ba00"
+Starting auditor container "391838d9677e3ca8f30fdb6c9e71a84f106927f0ecc2315c73a0d591dc5cac14"
+Starting auditor container "aae157393da2785fcab1245fc76ca26b33c6eac1b57e60a07ad747febe71b2e8"
+Starting auditor container "1bad1d451e8006efa7abb0b801d4d2a4903408c7641b3b5b558cd8fcd30c4c71"
+Starting auditor container "3979a116ef0db652f0b0bddf55a04396721cf248496aacf6a098a866709cd814"
+Starting auditor container "6c74f3d1c688f29db3239f460582d1a03da15f6dbc08356dbb578d477808cada"
 11 containers have been started.
-b30fe939f4f8eeaa8962fe7313b51f3a7dc210976983c446c75ad0fff1772edf : /opt/app/index.js,violin
-ceea8bf1ec239ed107ca68f7e26c6ed7f44423ea907eb94dc675e06dc82ec668 : /opt/app/index.js,piano
-bb57beb1d818920187ee3d4e8a7cd6d74e6fd1f15ba40af95cb6e2de3319e3f6 : /opt/app/index.js,flute
-a57b4c742852a04461ba347b1d021932aa46efca5096ab667d383430b9d85f30 : /opt/app/index.js,flute
-01809b00448a3c34db3c873271d03fd808c3ea5d57d7aa89c8ada3bb29dc74a9 : /opt/app/index.js,drum
-c6c3dc973ec6ef6528bb6caecbaabe342407a730a8b3798bd7e1e697a46b78df : /opt/app/index.js,violin
-43b0829c5faf833e49877349ef7c1fcec226ac8d218ee3a8aefb3883a57c13b2 : /opt/app/index.js,violin
-5e1005434f143aa01ee1e17229491f78cbbbce0461f98a88c3d08941b999e73c : /opt/app/index.js,flute
-5d4e0d2598a398897f7e15d5e771553f09827d2871510357070365282de32e52 : /opt/app/index.js,violin
-103000173aa5a0d7b667010b660aead50c719ccd764996f0bb99ebcf27007591 : /opt/app/index.js,drum
-d2da3b327c7dc03974bf17bdcd4d4634a90b16f39791897ef78d494e64bd4c36 : /opt/app/index.js
-Auditor validation: success: ["drum","drum","flute","flute","flute","piano","violin","violin","violin","violin"]
+48a5f679733ff40ac6def0e2c0f1446113ec1c44d0c9ec1c263e7fb18b16ba00 : /opt/app/index.js,piano
+3979a116ef0db652f0b0bddf55a04396721cf248496aacf6a098a866709cd814 : /opt/app/index.js,drum
+a5e6b2c7d9bfd372815601a9e396f49323d1dad762b5e7c5d2c16d5c4088f52c : /opt/app/index.js,piano
+6f21fe23f400c2c755ba18790728d5044423071605a4b5c68f77dce814b36f1f : /opt/app/index.js,violin
+391838d9677e3ca8f30fdb6c9e71a84f106927f0ecc2315c73a0d591dc5cac14 : /opt/app/index.js,violin
+6c74f3d1c688f29db3239f460582d1a03da15f6dbc08356dbb578d477808cada : /opt/app/index.js,flute
+1bad1d451e8006efa7abb0b801d4d2a4903408c7641b3b5b558cd8fcd30c4c71 : /opt/app/index.js,piano
+2289d6a78e117fd94a00974c75acf249076d7db8bad8128ece4b76b03407dbd1 : /opt/app/index.js,piano
+aae157393da2785fcab1245fc76ca26b33c6eac1b57e60a07ad747febe71b2e8 : /opt/app/index.js,violin
+205b5f198def0cdaf6f153d1aec06de9090413e5d4d309d3b529d63b0a5d3444 : /opt/app/index.js,flute
+34ece43d1279abb36697a0ab07cdf3a3e86a125441223f148e55f1ccd039cee2 : /opt/app/index.js
+Auditor validation: success: ["drum","flute","flute","piano","piano","piano","piano","violin","violin","violin"]
 There are 10 musicians, let's kill one
-killed 5e1005434f143aa01ee1e17229491f78cbbbce0461f98a88c3d08941b999e73c
-Auditor validation: success: ["drum","drum","flute","flute","piano","violin","violin","violin","violin"]
+killed 48a5f679733ff40ac6def0e2c0f1446113ec1c44d0c9ec1c263e7fb18b16ba00
+Auditor validation: success: ["drum","flute","flute","piano","piano","piano","violin","violin","violin"]
 Scheduling a new test
 There are 9 musicians, let's kill one
-killed ceea8bf1ec239ed107ca68f7e26c6ed7f44423ea907eb94dc675e06dc82ec668
-Auditor validation: success: ["drum","drum","flute","flute","violin","violin","violin","violin"]
+killed 3979a116ef0db652f0b0bddf55a04396721cf248496aacf6a098a866709cd814
+Auditor validation: success: ["flute","flute","piano","piano","piano","violin","violin","violin"]
 Scheduling a new test
 There are 8 musicians, let's kill one
-killed b30fe939f4f8eeaa8962fe7313b51f3a7dc210976983c446c75ad0fff1772edf
-Auditor validation: success: ["drum","drum","flute","flute","violin","violin","violin"]
+killed 6c74f3d1c688f29db3239f460582d1a03da15f6dbc08356dbb578d477808cada
+Auditor validation: success: ["flute","piano","piano","piano","violin","violin","violin"]
 Scheduling a new test
 There are 7 musicians, let's kill one
-killed 103000173aa5a0d7b667010b660aead50c719ccd764996f0bb99ebcf27007591
-Auditor validation: success: ["drum","flute","flute","violin","violin","violin"]
+killed aae157393da2785fcab1245fc76ca26b33c6eac1b57e60a07ad747febe71b2e8
+Auditor validation: success: ["flute","piano","piano","piano","violin","violin"]
 Scheduling a new test
 We have done all tests.
