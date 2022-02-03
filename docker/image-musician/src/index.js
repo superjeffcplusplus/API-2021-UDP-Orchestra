@@ -1,5 +1,6 @@
 const PORT = 1268;
 const IP = "239.255.22.5";
+const PLAYING_FREQUENCE = 1000;
 
 const dgram = require("dgram");
 const s = dgram.createSocket("udp4");
@@ -23,6 +24,16 @@ function getInstrument(name){
 }
 
 
+function playSound(){
+    // Send the payload via UDP (multicast)
+    message = new Buffer.from(instrument.sound);
+    s.send(message, 0, message.length, PORT, IP,
+        function(err, bytes) {
+            console.log(instrument.name.toUpperCase() + " playing sound '" + instrument.sound + "'");
+    });
+}
+
+
 const instrument = getInstrument(process.argv[2]);
 
 // if no instrument is specified or is wrong
@@ -31,12 +42,5 @@ if (instrument == ""){
     return;
 }
 
-
-setInterval(function(){ 
-    // Send the payload via UDP (multicast)
-    message = new Buffer.from(instrument.sound);
-    s.send(message, 0, message.length, PORT, IP,
-        function(err, bytes) {
-            console.log(instrument.name.toUpperCase() + " playing sound '" + instrument.sound + "'");
-    });
-}, 5000);
+playSound(); // to not wait before playing first sound
+setInterval(playSound, PLAYING_FREQUENCE);

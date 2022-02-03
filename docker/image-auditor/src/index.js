@@ -1,6 +1,7 @@
 const TCP_PORT = 2205;
 const UDP_PORT = 1268;
 const IP = "239.255.22.5";
+const CHECK_FREQUENCE = 5000;
 
 
 const RFC4122 = require('rfc4122');
@@ -12,7 +13,7 @@ const server = new Net.Server();
 const dgram = require('dgram');
 
 
-let musiciansInfo = [];
+let activeMusicians = [];
 let lastRequestTime = [];
 
 const instruments = [
@@ -24,10 +25,16 @@ const instruments = [
 ];
 
 function checkIfStillConnected(id){
+
+    //if already deleted
+    if (activeMusicians[id] == null){
+        return;
+    }
+
     timeBeforeLastConnection = Date.now() - lastRequestTime[id];
-    if (timeBeforeLastConnection > 5000){ // to keep little margin before next request
+    if (timeBeforeLastConnection > 4500){ // to keep little margin
         console.log(id + " inactive");
-        delete musiciansInfo[id];
+        delete activeMusicians[id];
     }
 }
 
@@ -36,19 +43,22 @@ function checkIfNewMusician(ip, port, sound){
     const id = ip + ":" + port;
     lastRequestTime[id] = Date.now();
 
-    setTimeout(checkIfStillConnected, 6000, id); // 6000 to be before next request
+    // check in 5sec if still connected
+    setTimeout(checkIfStillConnected, CHECK_FREQUENCE, id); 
     
     // if musician is already known
-    if (Object.keys(musiciansInfo).includes(id)){
+    if (Object.keys(activeMusicians).includes(id)){
         return;
     }
 
     // define new musician
-    musiciansInfo[id] = { 
+    activeMusicians[id] = { 
         uuid: rfc4122.v4(),
         instrument : getInstrumentName(sound),
         activeSince: new Date().toISOString()
     };
+
+    console.log("New instrument joined orchestra");
 
 }
 
@@ -77,13 +87,13 @@ server.on('connection', function(socket) {
 
     // server can send data to the client by writing to its socket
     let jsonObj = [];
-    for (let i in musiciansInfo){
-        jsonObj.push(musiciansInfo[i]);
+    for (let i in activeMusicians){
+        jsonObj.push(activeMusicians[i]);
     }
 
     socket.write(JSON.stringify(jsonObj) + "\r\n");
 
-    socket.destroy();
+    socket.destroy(); // close connection after having send request
 });
 
 
